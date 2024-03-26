@@ -560,6 +560,8 @@ body {
 .MainEvent .right_con .tab_slide {
     position: relative;
     display: none;
+
+    min-width: 0;
 }
 
 .MainEvent .right_con .tab_slide.on {
