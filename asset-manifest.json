@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/emart24/static/css/main.9557130d.css",
-    "main.js": "/emart24/static/js/main.8f793d7b.js",
+    "main.css": "/emart24/static/css/main.ca7bab0f.css",
+    "main.js": "/emart24/static/js/main.c5f44e42.js",
     "static/media/Asset04.svg": "/emart24/static/media/Asset04.33f909d769e3a798e528.svg",
     "index.html": "/emart24/index.html",
-    "main.9557130d.css.map": "/emart24/static/css/main.9557130d.css.map",
-    "main.8f793d7b.js.map": "/emart24/static/js/main.8f793d7b.js.map"
+    "main.ca7bab0f.css.map": "/emart24/static/css/main.ca7bab0f.css.map",
+    "main.c5f44e42.js.map": "/emart24/static/js/main.c5f44e42.js.map"
   },
   "entrypoints": [
-    "static/css/main.9557130d.css",
-    "static/js/main.8f793d7b.js"
+    "static/css/main.ca7bab0f.css",
+    "static/js/main.c5f44e42.js"
   ]
 }
