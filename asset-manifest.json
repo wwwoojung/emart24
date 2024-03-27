@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/emart24/static/css/main.ca7bab0f.css",
-    "main.js": "/emart24/static/js/main.c5f44e42.js",
+    "main.css": "/emart24/static/css/main.a8739efd.css",
+    "main.js": "/emart24/static/js/main.e1f6984d.js",
     "static/media/Asset04.svg": "/emart24/static/media/Asset04.33f909d769e3a798e528.svg",
+    "static/media/slick.svg": "/emart24/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/emart24/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/emart24/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/emart24/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/emart24/index.html",
-    "main.ca7bab0f.css.map": "/emart24/static/css/main.ca7bab0f.css.map",
-    "main.c5f44e42.js.map": "/emart24/static/js/main.c5f44e42.js.map"
+    "main.a8739efd.css.map": "/emart24/static/css/main.a8739efd.css.map",
+    "main.e1f6984d.js.map": "/emart24/static/js/main.e1f6984d.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca7bab0f.css",
-    "static/js/main.c5f44e42.js"
+    "static/css/main.a8739efd.css",
+    "static/js/main.e1f6984d.js"
   ]
 }
