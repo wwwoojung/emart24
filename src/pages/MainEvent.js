@@ -1,13 +1,16 @@
 import Slider from "react-slick";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const MainEvent = () => {
     const slide_settings = {
         dots: false,
         arrows: false,
-        infinite: false,
+        // infinite: false,
         speed: 500,
-        slidesToShow: 3,
-        autoplay: true,
+        slidesToShow: 5,
+        autoplay: false,
         // nextArrow: <SvgIcon component={NavigateNextIcon} inheritViewBox />,
         // prevArrow: <SvgIcon component={NavigateBeforeIcon} inheritViewBox />,
     };

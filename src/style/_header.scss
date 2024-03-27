@@ -1,0 +1,243 @@
+#Header {
+    height: 10rem;
+    background: var(--wc);
+}
+
+#Header .header_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
+    background: var(--wc);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#Header .header_wrap .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+
+    white-space: nowrap;
+}
+
+#Header .header_wrap.on {
+    background: var(--wc);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+#Header .header_wrap h1 {
+    width: 15rem;
+
+    line-height: 10rem;
+}
+
+#Header .header_wrap h1>a {
+    display: block;
+}
+
+#Header .header_wrap .gnb>ul {
+    display: flex;
+}
+
+#Header .header_wrap .gnb>ul>li {
+    position: relative;
+    line-height: 10rem;
+}
+
+#Header .header_wrap .gnb>ul>li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -6rem;
+    right: 0;
+
+    width: 0;
+    height: 4px;
+    border-radius: 8px;
+
+    margin: 0 auto;
+
+    background: var(--mc);
+
+    transition: 0.5s;
+}
+
+#Header .header_wrap .gnb>ul>li:hover::after {
+    width: calc(100% - 6rem);
+}
+
+#Header .header_wrap .gnb>ul>li:last-child::after {
+    left: 0;
+}
+
+#Header .header_wrap .gnb>ul>li:last-child:hover::after {
+    width: 100%;
+}
+
+#Header .header_wrap .gnb>ul>li>a {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#Header .header_wrap .gnb>ul>li:not(:last-child)>a {
+    padding: 0 6rem 0 0;
+}
+
+#Header .m_btn {
+    display: none;
+    background: var(--wc);
+
+    padding: 0 0;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+#Header .m_btn .hamburger-inner,
+#Header .m_btn .hamburger-inner::after,
+#Header .m_btn .hamburger-inner::before {
+    width: 3rem;
+}
+
+#Header .m_btn .hamburger-box {
+    width: 2.8rem;
+}
+
+#Header .header_wrap .gnb::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    height: 0;
+    overflow: hidden;
+
+    background: var(--wc);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    transition: 0.5s;
+}
+
+#Header .header_wrap .gnb:hover::before {
+    height: 300px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#Header .header_wrap .gnb .depth2 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    transform: translate(0, 10px);
+
+    height: 0;
+    overflow: hidden;
+
+    transition: height 0.5s;
+}
+
+#Header .header_wrap .gnb:hover .depth2 {
+    height: 300px;
+}
+
+#Header .header_wrap .gnb .depth2>li {
+    line-height: 36px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#Header .header_wrap .gnb .depth2>li>a {
+    display: block;
+}
+
+#Header .header_wrap .gnb .depth2>li>a:hover {
+    color: var(--mc);
+}
+
+@media (max-width: 1250px) {
+    #Header .header_wrap.on {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #Header .header_wrap h1 {
+        position: relative;
+        z-index: 1000;
+    }
+
+    #Header .header_wrap .gnb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 999;
+
+        background: var(--wc);
+
+        width: calc(100% - 9rem);
+        height: 100vh;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+        transition: 0.5s;
+
+        overflow: scroll;
+    }
+
+    /* #Header .header_wrap::after {
+        content: "";
+        position: absolute;
+        inset: 0 0 0 0;
+        z-index: -1;
+
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.1);
+    } */
+
+    #Header .header_wrap .gnb.on {
+        left: 0;
+    }
+
+    #Header .header_wrap .gnb>ul {
+        flex-direction: column;
+        gap: 0;
+
+        padding: 11.9rem 2.4rem 0 2.4rem;
+    }
+
+    #Header .header_wrap .gnb>ul>li {
+        line-height: 5.6rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #Header .m_btn {
+        display: block;
+    }
+
+    #Header .header_wrap .gnb::before {
+        display: none;
+    }
+
+    #Header .header_wrap .gnb>ul>li::after {
+        display: none;
+    }
+
+    #Header .header_wrap .gnb .depth2 {
+        position: static;
+        display: none;
+
+        transform: translate(0, 0);
+        padding: 16px 24px;
+        height: auto;
+        transition: none;
+
+        background: var(--bg_c);
+    }
+
+    #Header .header_wrap .gnb:hover .depth2 {
+        height: auto;
+    }
+}
